@@ -85,19 +85,19 @@ function convertMs(upTime) {
   refs.hoursDisplay.textContent = hours;
   refs.minutesDisplay.textContent = minutes;
   refs.secondsDisplay.textContent = seconds;
-  // return `${days}  : ${hours} : ${minutes} : ${seconds}`;
+  return `${days} : ${hours} : ${minutes} : ${seconds}`;
 
 
   // const currentDeys = days;
   // const currentHour = hours;
   // const currentMinutes = minutes;
   // const currentSeconds = seconds;
-  const formatTime = `${days} : ${hours} : ${minutes} : ${seconds}`;
-  refs.timer.textContent = `${formatTime}`;
-
+  // const formatTime = `${days} : ${hours} : ${minutes} : ${seconds}`;
+  // refs.timer.textContent = `${formatTime}`;
 }
+
 function addLeadingZero(value) {
-  return String(value).padStart(2, 0)
+  return String(value).padStart(2, 0);
 }
 
 
